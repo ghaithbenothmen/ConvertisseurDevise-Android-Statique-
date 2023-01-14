@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ConvertisseurDevise.AppBarOverlay">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/convertisseur_de_devise"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txtMontant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/montant"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donnez_le_montant_a_convertir"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <Spinner
+            android:id="@+id/spinnerVers"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/action_settings"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="395dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDe"
+            android:layout_width="109dp"
+            android:layout_height="48dp"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/de"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="332dp" />
+
+        <TextView
+            android:id="@+id/Vers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vers"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <Button
+            android:id="@+id/btnCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/convertir"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+        <TextView
+            android:id="@+id/montantConv"
+            android:layout_width="153dp"
+            android:layout_height="23dp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="574dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
